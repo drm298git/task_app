@@ -7,8 +7,8 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
-          start_at : "開始日"
-          end_at : "終了日" #開始日<終了日の場合のエラーログを日本語に修正
+          Start_at : "開始日"
+          End_at : "終了日" #開始日<終了日の場合のエラーログを日本語に修正
   date:
     abbr_day_names:
     - 日

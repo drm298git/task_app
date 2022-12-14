@@ -43,17 +43,22 @@ body {
   }
   
   table {
-    border-collapse:collapse;
+    border-collapse: collapse;
   }
-  
-  table th,table td {
-    border:solid 1px black;
-    padding:10px 20px;
+
+  table th, table td {
+    border: solid 1px black;
+    padding: 10px 20px;
   }
-  
+
   table td {
-    background-color:#f1c8c861;
-    text-align:center;
+    background-color: #f1c8c861;
+    text-align: center;
+  }
+
+  td {
+    display: table-cell;
+    vertical-align: inherit;
   }
   
   table th {
@@ -81,4 +86,8 @@ body {
     height:200px;
     font-size:16px;
   }
-  
+
+
+  input[type="text"] {
+    
+  }
