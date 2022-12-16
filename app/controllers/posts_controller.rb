@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if @post.save!
+    if @post.save
       flash[:notice] = "スケジュールを新規作成しました"
       redirect_to :posts
     else

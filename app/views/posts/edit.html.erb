@@ -6,6 +6,8 @@
   <h2>スケジュール編集</h2>
 </div>
 
+<%= render "shared/error", obj: @post %>
+
 <%= form_with model: @post do |f| %>
 
 <table>
@@ -32,9 +34,10 @@
 
   <tr>
     <th><%= f.label :memo, "スケジュールメモ" %></th>
-    <td><%= f.text_area :memo {class: "posts-content"} %></td>
+    <td><%= f.text_area :memo, class: 'posts-content' %></td>
   </tr>
 
+</table>
 
   <div>
     <ul>
