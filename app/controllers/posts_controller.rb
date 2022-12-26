@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if @post.update!(post_params)
+    if @post.update(post_params)
       flash[:notice] = "スケージュールの編集を完了しました"
       redirect_to :posts
     else
